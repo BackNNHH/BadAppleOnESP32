@@ -14,8 +14,8 @@ Play Bad Apple video on ESP32 using TFT_eSPI library. Video stored in internal f
 
 ---
 
-## Hardware Requirements
-* **MCU:** ESP32 WROOM.
+## Hardware used in this repo
+* **MCU:** ESP32.
 * **Display:** 2.4" TFT ST7789 (240x320). 
 * **Note:** ILI display series (ILI9341, etc.) **untested**.
 * **Storage:** Internal flash only (`PROGMEM`). No SD card reader required.
@@ -54,3 +54,6 @@ Modify `User_Setup.h` in TFT_eSPI library directory. Set correct drivers and pin
 * Video playback with external light automation.
 * **Relay Pin:** GPIO 14 (Configured for Active LOW / `INVERT_RELAY = true`).
 * **Trigger Logic:** Checks 4 corners of current frame. If $\ge 3$ corners turn white, triggers relay to turn on light.
+
+## TODO
+audio support 🫪
